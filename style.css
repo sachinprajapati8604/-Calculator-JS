@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading{
+  background: grey;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.app-main {
+  border: 1px solid green;
+  width: 37vw;
+  margin: auto;
+  margin-top: 50px;
+}
+.input-body {
+  text-align: right;
+  padding: 20px;
+}
+.query-input input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: blue;
+}
+.query-input input:focus {
+  outline: none;
+}
+.input-body .result {
+  font-weight: bold;
+  font-size: 30px;
+}
+hr {
+  margin: 10px;
+}
+.btn-box {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.btn-box .row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.row .col-4 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  flex-basis: 15%;
+  margin-top: 20px;
+  background: grey;
+  margin-left: 2px;
+ 
+  padding: 20px;
+  border-radius: 30%;
+}
+i{
+  color:#bd3154;
+}
+
+@media screen and (max-width: 1120px) {
+  .app-main {
+    width: 95%;
+  }
+  .row .col-4 {
+    padding: 10px;
+  }
+}

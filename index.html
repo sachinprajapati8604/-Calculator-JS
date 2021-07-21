@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/6927334/pexels-photo-6927334.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="app-main">
+        <h5 class="heading"> Calculator <i class="fas fa-calculator"></i> </h5>
+        <form name="calculator">
+            <div class="input-body">
+                <div class="query-input">
+                    <input type="text" id="my-input" name="ans"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                </div>
+                <div class="result" id="result">
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="btn-box">
+
+                <div class="row">
+                    <div class="col-4" onclick="clearAll()">AC</div>
+                    <div class="col-4" onclick="clearAll()">del</div>
+                    <div class="col-4" onclick="document.calculator.ans.value=(document.calculator.ans.value)/100"><i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='/'"><i class="fas fa-divide"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-4" onclick="document.calculator.ans.value+='7'">7</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='8'">8</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='9'">9</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='*'"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-4" onclick="document.calculator.ans.value+='4'">4</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='5'">5</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='6'">6</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='-'"><i class="fas fa-minus"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-4" onclick="document.calculator.ans.value+='1'">1</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='2'">2</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='3'">3</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='+'"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-4" onclick="clearAll()"><i class="fas fa-redo-alt"></i></div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='0'">0</div>
+                    <div class="col-4" onclick="document.calculator.ans.value+='.'">.</div>
+                    <div class="col-4" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)"><i class="fas fa-equals"></i>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
