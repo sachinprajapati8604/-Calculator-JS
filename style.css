@@ -11,10 +11,11 @@
 }
 
 .app-main {
-  border: 1px solid green;
+  border: 1px solid #ccc;
   width: 37vw;
   margin: auto;
   margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .input-body {
   text-align: right;
